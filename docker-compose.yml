@@ -1,0 +1,13 @@
+version: "0.0"
+services:
+  mysql:
+    image:  mariadb
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: toor
+  
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
