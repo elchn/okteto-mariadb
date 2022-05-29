@@ -1,11 +1,11 @@
 version: "0.0"
 services:
   db:
-    image:  mariadb
+    # image:  mariadb
+    build: .
     restart: always
     environment:
       MARIADB_ROOT_PASSWORD: toor
-      MYSQL_ROOT_HOST: '%'
     ports:
       - 3306:3306
   
