@@ -1,6 +1,6 @@
 version: "0.0"
 services:
-  mysql:
+  db:
     image:  mariadb
     restart: always
     environment:
@@ -11,3 +11,8 @@ services:
     restart: always
     ports:
       - 8080:8080
+endpoints:
+  db:
+    - path: /
+      service: db
+      port: 3306
