@@ -5,7 +5,7 @@ services:
     restart: always
     environment:
       MARIADB_ROOT_PASSWORD: toor
-      MYSQL_ROOT_HOST: 10.8.46.5
+      MYSQL_ROOT_HOST: "%"
     ports:
       - 3306:3306
   
